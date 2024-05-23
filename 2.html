@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Form</title>
+</head>
+<body>
+
+<form action="#" method="post">
+
+  <div>
+    <label for="languageSelect">Favorite Programming Language:</label>
+    <select id="languageSelect" name="language">
+      <option value="javascript">JavaScript</option>
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+
+    </select>
+  </div>
+
+  <div role="group" aria-labelledby="expertiseLabel">
+    <span id="expertiseLabel">Level of Expertise:</span>
+    <div>
+      <input type="radio" id="beginner" name="expertise" value="beginner" aria-labelledby="beginnerLabel">
+      <label id="beginnerLabel" for="beginner">Beginner</label>
+    </div>
+    <div>
+      <input type="radio" id="intermediate" name="expertise" value="intermediate" aria-labelledby="intermediateLabel">
+      <label id="intermediateLabel" for="intermediate">Intermediate</label>
+    </div>
+    <div>
+      <input type="radio" id="advanced" name="expertise" value="advanced" aria-labelledby="advancedLabel">
+      <label id="advancedLabel" for="advanced">Advanced</label>
+    </div>
+  </div>
+
+  <div role="group" aria-labelledby="platformLabel">
+    <span id="platformLabel">Development Platforms:</span>
+    <div>
+      <input type="checkbox" id="web" name="platform" value="web" aria-labelledby="webLabel">
+      <label id="webLabel" for="web">Web</label>
+    </div>
+    <div>
+      <input type="checkbox" id="mobile" name="platform" value="mobile" aria-labelledby="mobileLabel">
+      <label id="mobileLabel" for="mobile">Mobile</label>
+    </div>
+    <div>
+      <input type="checkbox" id="desktop" name="platform" value="desktop" aria-labelledby="desktopLabel">
+      <label id="desktopLabel" for="desktop">Desktop</label>
+    </div>
+  </div>
+
+  <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
